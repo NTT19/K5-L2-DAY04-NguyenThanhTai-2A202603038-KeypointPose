@@ -4,7 +4,7 @@
 
 ## 0. Thông tin học viên
 
-- Họ tên: Nguyen Thanh Tai
+- Họ tên: Nguyễn Thành Tài
 - MSSV: 202603038
 - Email: thanhtai5223@gmail.com
 - Link repository: https://github.com/NTT19/K5-L2-DAY04-NguyenThanhTai-2A202603038-KeypointPose.git
