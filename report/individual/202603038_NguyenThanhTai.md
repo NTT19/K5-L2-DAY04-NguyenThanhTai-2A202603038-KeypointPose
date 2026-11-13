@@ -45,7 +45,7 @@ Danh sách ảnh người theo `assignment.json`:
 - `crowd`: `000000012552.jpg`.
 
 - Số ảnh người đã xong ở mốc phút 105: 10 ảnh.
-- Thời gian thực tế (phút): CP1 8 phút · CP2 3 phút · CP3 5p.
+- Thời gian thực tế (phút): CP1 44 phút · CP2 30 phút · CP3 20p.
 - Ảnh tốn thời gian nhất là ảnh nào, vì sao?
 `000000012552.jpg` là ảnh `crowd`, có 3 skeleton và 18 điểm `v = 0`, nên là  cần nhiều thao tác nhất; thời gian thực tế 9p.
 
@@ -167,46 +167,43 @@ Trong quá trình làm bài không gặp lỗi kỹ thuật nghiêm trọng. CVA
 
 ### B1 — 3 ảnh người khó thêm
 
-Không thực hiện bonus B1; không có file `NguyenThanhTai_bonus_persons.zip` trong `src/exports/`.
-
 | Ảnh | Số skeleton | Số người dưới 60 px | Ca khó nhất |
 |---|---:|---:|---|
-| Không làm | — | — | — |
-| Không làm | — | — | — |
-| Không làm | — | — | — |
+| | | | |
+| | | | |
+| | | | |
 
 Kết quả `src/check_submission.py` cho `HoVaTen_bonus_persons.zip`:
 
 ```text
-Không có file bonus để kiểm tra.
+(dán ở đây)
 ```
 
 ### B2 — 5 ảnh khuôn mặt đen trắng / hồng ngoại
 
-Không thực hiện bonus B2; không có file `NguyenThanhTai_bonus_faces.zip`. Về nguyên tắc, ảnh ít màu làm giảm tín hiệu phân biệt mắt, mí và da. Kính râm vẫn là `v = 1` nếu bị che nhưng vẫn ước lượng chắc được vị trí; dùng `v = 0` nếu không thể xác định.
+Ảnh không màu khó hơn ở điểm nào? Kính râm trên ảnh hồng ngoại có còn là `v = 1` không?
+
+...
 
 ### B3 — Model so với nhãn của tôi (không tính điểm)
 
-- Demo đã dùng: Chưa thực hiện
-- Ảnh đã thử: Chưa có
+- Demo đã dùng:
+- Ảnh đã thử:
 
 1. Model có trả điểm cho khớp bị che, hay khớp ngoài ảnh không? Confidence ở các điểm đó thế nào?
 
-   Chưa thực hiện bonus B3.
+   ...
 
 2. Với người quay lưng, model có đổi trái/phải không?
 
-   Chưa thực hiện bonus B3.
+   ...
 
 3. Bộ điểm của model có giống 17 điểm COCO không?
 
-   Chưa thực hiện bonus B3.
+   ...
 
 ## 9. Tài liệu tham khảo và công cụ AI đã dùng
 
-- `README.md`, `RULES.md`, `CHECKPOINTS.md`, `RUBRIC.md`, `SUBMISSION.md` của lab.
-- `docs/GUIDELINE.md`, `docs/CVAT_CHEATSHEET.md`, `docs/COCO_KEYPOINTS.md`.
-- `src/keypoint_schema.json`, `src/check_submission.py`, `src/exports/assignment.json` và hai file xuất trong `src/exports/`.
-- Metadata nguồn ảnh trong `src/lab/pool.json` và `src/lab/NGUON_ANH.md`; ảnh người theo COCO và ảnh mặt theo nguồn được ghi trong metadata.
-- Công cụ AI: ChatGPT/Codex được dùng để hỗ trợ đọc cấu trúc repo, kiểm tra số liệu file xuất và chỉnh câu chữ/bố cục báo cáo; không dùng để sinh tọa độ keypoint.
+...
+
 
